@@ -1,0 +1,28 @@
+.primary-btn {
+    min-width: 150px;
+    background: #72c3dc;
+    padding: 10px;
+    border: 0;
+    border-bottom: 3px solid #2f454e;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .primary-btn + .primary-btn {
+    margin-top: 10px;
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .primary-btn {
+      min-width: 100px;
+    }
+  
+    .primary-btn + .primary-btn {
+      margin-top: 0px;
+      margin-left: 10px;
+    }
+  }
+  

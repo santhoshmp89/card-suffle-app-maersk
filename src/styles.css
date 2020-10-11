@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+main {
+    font-family: sans-serif;
+    flex-wrap: wrap;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.cards-list {
+    display: flex;
+    border-top: 5px solid #ccc;
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100vh;
+    background: #e8e8e8;
+}
+
+.cards-grid {
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.cards-aside {
+    flex: 1;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+    main h1 {
+        background:#404040;
+        color: #fff;
+        margin: 0;
+        padding: 15px 0;
+        font-weight: 400;
+    }
+
+    .cards-list {
+        flex-direction: column-reverse;
+        max-width: auto;      
+        background: #fff;
+        border: none;
+    }
+
+    .cards-aside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        padding-top: 0;
+        flex: 0;
+    }
+}
